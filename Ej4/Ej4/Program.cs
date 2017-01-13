@@ -12,9 +12,9 @@ namespace Ej4
             int n, divisor;
 
 
-            Console.Write("\n\n Números primos del 1 al 1000\n\n");
-
-            for (n = 2  ; n <= 1000; n++)
+            Console.Write("\t\t Números primos del 1 al 1000\n\n");
+            Console.Write("\n\n Puede que numeros se repitan \n\n");
+            for (n = 2  ; n <= 10; n++) // Cambiar a mil para probar 
             {
                 for (divisor = 2; n % divisor != 0; divisor++)
                 {
