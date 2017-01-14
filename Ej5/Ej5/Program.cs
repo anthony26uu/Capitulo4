@@ -1,4 +1,8 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,32 +16,32 @@ namespace Ej5
         static void Main()
         {
             int num;
-            Console.WriteLine("Ingrese Numero de Calificaciones a calcular ");
+            Console.WriteLine("Ingrese Numero de edades");
             num = int.Parse(Console.ReadLine());
             int s=0;
-            int[] cali = new int[num];
+            int[] edades = new int[num];
 
             
-            for (int i = 0; i < cali.Length; i++)
+            for (int i = 0; i < edades.Length; i++)
             {
-                Console.WriteLine("Ingrese Calificacion de estudiante " );
-                cali[i] = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese Edad ");
+                edades[i] = int.Parse(Console.ReadLine());
  
             }
             
-            for (int id=0; id< cali.Length; id++)
+            for (int id=0; id<edades.Length; id++)
             {
-                Console.WriteLine("Calificacion {0}: {1}", id, cali[id]);
-                    s += cali[id];
+                Console.WriteLine("Edad {0}: {1}", id, edades[id])
+                    s += edades[id];
              }
 
             Console.WriteLine("Su suma es "+s);
-            Console.WriteLine("Promedio de calificacion es " + s / cali.Length);
+            Console.WriteLine("Promedio de edades es " + s / edades.Length);
 
-            Array.Sort(cali);
-            Console.WriteLine("Calificacion minima es: " + cali[0]);
-            Array.Reverse(cali);
-            Console.WriteLine("Calificacion maxima es: " + cali[0]);
+            Array.Sort(edades);
+            Console.WriteLine("Edad menor es: " + edades[0]);
+            Array.Reverse(edades);
+            Console.WriteLine("Edad mayor es: " + edades[0]);
             
 
 
