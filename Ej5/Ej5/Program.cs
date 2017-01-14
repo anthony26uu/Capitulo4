@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +27,7 @@ namespace Ej5
             
             for (int id=0; id<edades.Length; id++)
             {
-                Console.WriteLine("Elemento {0}: {1}", id, edades[id])
+                Console.WriteLine("Elemento {0}: {1}", id, edades[id]);
                     s += edades[id];
              }
 
